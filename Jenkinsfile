@@ -5,6 +5,7 @@ pipeline {
     //         args '-p 3000:3000'
     //     }
     // }
+    agent none
     environment {
         CI = 'true'
     }
