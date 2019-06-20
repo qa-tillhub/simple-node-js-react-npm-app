@@ -6,6 +6,12 @@ pipeline {
     //     }
     // }
     agent none
+    node('master') {
+ `   stage('Checkout and set agent'){
+     checkout scm
+     ### Or just use any other approach to figure out agent label: read file, etc
+   }
+}
     environment {
         CI = 'true'
     }
